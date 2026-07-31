@@ -16,7 +16,7 @@ export function PromoBar() {
           <SunIcon /> Nou
         </span>
         <span className="text-sm font-600 leading-tight sm:text-[15px]">
-          Curățare panouri solare — redăm randamentul de la montaj. <span>Apasă ca să suni!</span>
+          Curățare panouri solare — redăm randamentul de la montaj. <br />Apasă ca să suni!
         </span>
         <span className="hidden items-center gap-1 text-sm font-600 underline decoration-petrol-950/40 underline-offset-2 group-hover:decoration-petrol-950 sm:inline-flex">
           Sună acum →
