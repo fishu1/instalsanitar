@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site, firma, firmaCompleta } from "@/site.config";
+import { PromoBar } from "@/components/Promo.Bar";
 
 export function LegalShell({
   titlu,
@@ -10,6 +11,7 @@ export function LegalShell({
 }) {
   return (
     <main className="min-h-screen bg-petrol-950">
+      <PromoBar />
       <header className="border-b border-petrol-line/40">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-5 py-4">
           <Link href="/" className="font-display text-lg font-600 text-cream">

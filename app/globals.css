@@ -88,3 +88,29 @@ body {
 .prose-legal a { color: var(--cupru-400); text-decoration: underline; }
 .prose-legal a:hover { color: var(--cupru-500); }
 .prose-legal strong { color: var(--cream); font-weight: 600; }
+
+/* ── Banda promo: sclipire care traverseaza ─────────────── */
+.promo-shine {
+  position: absolute;
+  top: 0;
+  left: -30%;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    100deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    transparent 100%
+  );
+  transform: skewX(-18deg);
+  animation: promo-sweep 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+@keyframes promo-sweep {
+  0%   { left: -30%; }
+  35%  { left: 130%; }
+  100% { left: 130%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .promo-shine { display: none; }
+}

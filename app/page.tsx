@@ -1,4 +1,5 @@
 import { site, servicii } from "@/site.config";
+import { PromoBar } from "@/components/Promo.Bar";
 
 export default function Home() {
   const telHref = `tel:${site.telefonLink}`;
@@ -6,6 +7,7 @@ export default function Home() {
 
   return (
     <main className="relative overflow-hidden">
+      <PromoBar />
       <Header telHref={telHref} />
       <Hero telHref={telHref} waHref={waHref} />
       <Servicii />
