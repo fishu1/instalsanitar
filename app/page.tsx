@@ -6,7 +6,7 @@ export default function Home() {
   const waHref = `https://wa.me/${site.whatsapp}`;
 
   return (
-    <main className="relative overflow-hidden">
+    <main className="relative">
       <PromoBar />
       <Header telHref={telHref} />
       <Hero telHref={telHref} waHref={waHref} />
