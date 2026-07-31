@@ -274,6 +274,26 @@ function Footer() {
     </footer>
   );
 }
+/* ── Fundal cu conducte (SVG decorativ) ─────────────────── */
+function PipesBg() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.15]"
+      preserveAspectRatio="xMidYMid slice"
+    >
+      <defs>
+        <pattern id="p" width="120" height="120" patternUnits="userSpaceOnUse">
+          <path d="M0 60 H120 M60 0 V120" stroke="var(--cupru-500)" strokeWidth="1" fill="none" />
+          <circle cx="60" cy="60" r="4" fill="none" stroke="var(--cupru-500)" strokeWidth="1" />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#p)" />
+    </svg>
+  );
+}
+
+
 /* ── Iconuri ────────────────────────────────────────────── */
 function PhoneIcon() {
   return (
