@@ -1,26 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
+/* ── Design tokens ───────────────────────────────────────────
+   Paleta derivata din meseria de instalator:
+   - "cupru"  = alama/cupru cald, culoarea fitingurilor  -> accent
+   - "petrol" = albastru-verde profund, apa in conducta  -> fundal
+   - "zinc"   = metal periat, neutru rece                -> text sec.
+   ---------------------------------------------------------- */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --petrol-950: #071a1c;
+  --petrol-900: #0b2529;
+  --petrol-800: #103237;
+  --petrol-700: #164249;
+  --petrol-line: #1d5259;
+
+  --cupru-400: #e0a35e;
+  --cupru-500: #c8823a;
+  --cupru-600: #a8672a;
+
+  --cream: #f4efe6;
+  --zinc-300: #cbd2d1;
+  --zinc-400: #9aa6a5;
+  --zinc-500: #74807f;
+
+  --background: var(--petrol-950);
+  --foreground: var(--cream);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-petrol-950: var(--petrol-950);
+  --color-petrol-900: var(--petrol-900);
+  --color-petrol-800: var(--petrol-800);
+  --color-petrol-700: var(--petrol-700);
+  --color-petrol-line: var(--petrol-line);
+  --color-cupru-400: var(--cupru-400);
+  --color-cupru-500: var(--cupru-500);
+  --color-cupru-600: var(--cupru-600);
+  --color-cream: var(--cream);
+  --color-zinc-300: var(--zinc-300);
+  --color-zinc-400: var(--zinc-400);
+  --color-zinc-500: var(--zinc-500);
+  --font-display: 'Fraunces', 'Georgia', 'Times New Roman', serif;
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.pipe-rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--cupru-600) 20%, var(--cupru-500) 50%, var(--cupru-600) 80%, transparent);
+}
+
+/* ── Text pagini legale ─────────────────────────────────── */
+.prose-legal { color: var(--zinc-300); line-height: 1.7; }
+.prose-legal h2 {
+  font-family: var(--font-display);
+  color: var(--cream);
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 2rem 0 0.75rem;
+}
+.prose-legal h3 {
+  color: var(--cream);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.5rem;
+}
+.prose-legal p { margin: 0.75rem 0; }
+.prose-legal ul { margin: 0.75rem 0; padding-left: 1.25rem; list-style: disc; }
+.prose-legal li { margin: 0.35rem 0; }
+.prose-legal a { color: var(--cupru-400); text-decoration: underline; }
+.prose-legal a:hover { color: var(--cupru-500); }
+.prose-legal strong { color: var(--cream); font-weight: 600; }
