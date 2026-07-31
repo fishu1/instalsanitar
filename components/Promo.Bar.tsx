@@ -5,7 +5,7 @@ export function PromoBar() {
   return (
     <a
       href={telHref}
-      className="group relative block overflow-hidden border-b border-cupru-600/40 bg-gradient-to-r from-cupru-600 via-cupru-500 to-cupru-600"
+      className="group sticky top-0 z-50 relative block overflow-hidden border-b border-cupru-600/40 bg-gradient-to-r from-cupru-600 via-cupru-500 to-cupru-600"
       aria-label="Serviciu nou: curățare panouri solare — sună acum"
     >
       {/* sclipire care traverseaza banda */}
