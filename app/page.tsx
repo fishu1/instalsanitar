@@ -15,7 +15,6 @@ export default function Home() {
       <Zone />
       <Contact telHref={telHref} waHref={waHref} />
       <Footer />
-      //<CallBar telHref={telHref} waHref={waHref} />
     </main>
   );
 }
