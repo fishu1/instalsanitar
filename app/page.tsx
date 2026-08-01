@@ -27,7 +27,7 @@ function Header({ telHref }: { telHref: string }) {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
         <a href="#top" className="flex items-center">
           <Image
-            src="/Logo.PNG"
+            src="/Logo1.PNG"
             alt="InstalSanitar.ro"
             width={160}
             height={40}
