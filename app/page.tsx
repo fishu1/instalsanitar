@@ -52,9 +52,6 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
       <div className="pointer-events-none absolute inset-0 bg-petrol-950/70" />
 
       <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:pt-24">
-
-
-      <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:pt-24">
         <span className="inline-flex items-center gap-2 rounded-full border border-petrol-line/60 bg-petrol-900/60 px-3 py-1 text-xs font-500 uppercase tracking-widest text-cupru-400">
           <span className="h-1.5 w-1.5 rounded-full bg-cupru-400" />
           {site.oras}, jud. {site.judet}
@@ -95,6 +92,7 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
     </section>
   );
 }
+
 
 function Stat({ k, v }: { k: string; v: string }) {
   return (
