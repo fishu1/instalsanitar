@@ -39,7 +39,7 @@ export const firma = {
   cui: "RO48824708",                          // completeaza de pe certificatul de inregistrare, ex: RO12345678
   regCom: "J28/831/2023",             // completeaza de pe certificat, ex: J28/123/2023
   sediu: "Strada Bisericii, nr. 22, Rusănești, jud. Olt",
-  emailContact: "contact@instalsanitar.ro",
+  emailContact: "instalsanitar.aeroterm@gmail.com",
   // Data ultimei actualizari a documentelor legale (o schimbi cand modifici textele)
   actualizat: "iulie 2026",
 };
