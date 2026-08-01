@@ -1,5 +1,6 @@
 import { site, servicii } from "@/site.config";
 import { PromoBar } from "@/components/Promo.Bar";
+import Image from "next/image";
 
 export default function Home() {
   const telHref = `tel:${site.telefonLink}`;
@@ -24,9 +25,15 @@ function Header({ telHref }: { telHref: string }) {
   return (
     <header className="relative z-20 border-b border-petrol-line/40">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-        <a href="#top" className="font-display text-lg font-600 tracking-tight text-cream">
-          Instal<span className="text-cupru-400">Sanitar</span>
-          <span className="text-zinc-500">.ro</span>
+        <a href="#top" className="flex items-center">
+          <Image
+            src="/Logo.PNG"
+            alt="InstalSanitar.ro"
+            width={160}
+            height={40}
+            priority
+            className="h-9 w-auto"
+          />
         </a>
         <a
           href={telHref}
