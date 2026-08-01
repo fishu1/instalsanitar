@@ -32,7 +32,7 @@ function Header({ telHref }: { telHref: string }) {
             width={220}
             height={60}
             priority
-            className="h-9 w-auto"
+            className="h-12 w-auto"
           />
         </a>
         <a
