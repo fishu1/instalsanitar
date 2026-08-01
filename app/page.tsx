@@ -42,9 +42,17 @@ function Header({ telHref }: { telHref: string }) {
 /* ── Hero ───────────────────────────────────────────────── */
 function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
   return (
-    <section id="top" className="relative">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(120%_100%_at_80%_-10%,#164249_0%,#0b2529_45%,#071a1c_100%)]" />
-      <PipesBg />
+    <section id="top" className="relative overflow-hidden">
+      {/* imaginea de fundal */}
+      <div
+        className="pointer-events-none absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/Background-image.PNG')" }}
+      />
+      {/* strat întunecat peste imagine, ca textul să rămână lizibil */}
+      <div className="pointer-events-none absolute inset-0 bg-petrol-950/70" />
+
+      <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:pt-24">
+
 
       <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-16 sm:pt-24">
         <span className="inline-flex items-center gap-2 rounded-full border border-petrol-line/60 bg-petrol-900/60 px-3 py-1 text-xs font-500 uppercase tracking-widest text-cupru-400">
