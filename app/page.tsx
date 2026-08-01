@@ -29,10 +29,10 @@ function Header({ telHref }: { telHref: string }) {
           <Image
             src="/Logo1.png"
             alt="InstalSanitar.ro"
-            width={220}
-            height={60}
+            width={180}
+            height={40}
             priority
-            className="h-12 w-auto"
+            className="h-16 w-auto"
           />
         </a>
         <a
