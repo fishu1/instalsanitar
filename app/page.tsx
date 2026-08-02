@@ -71,7 +71,7 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
 
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-zinc-300">
           Montaj centrale, desfundări, reparații și amenajări complete în{" "}
-          în {site.razaKm}. Lucrare făcută ca la
+          {site.razaKm}. Lucrare făcută ca la
           carte, cu preț spus din start.
         </p>
 
