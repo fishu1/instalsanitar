@@ -53,7 +53,7 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
       {/* imaginea de fundal */}
       <div
         className="pointer-events-none absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/Background-image.PNG')" }}
+        style={{ backgroundImage: "url('/Background-image.jpg')" }}
       />
       {/* strat întunecat peste imagine, ca textul să rămână lizibil */}
       <div className="pointer-events-none absolute inset-0 bg-petrol-950/70" />
