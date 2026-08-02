@@ -71,7 +71,7 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
 
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-zinc-300">
           Montaj centrale, desfundări, reparații și amenajări complete în{" "}
-          {site.oras} și pe o rază de {site.razaKm} km. Lucrare făcută ca la
+          în {site.razaKm}. Lucrare făcută ca la
           carte, cu preț spus din start.
         </p>
 
@@ -93,7 +93,7 @@ function Hero({ telHref, waHref }: { telHref: string; waHref: string }) {
         <dl className="mt-12 grid max-w-lg grid-cols-3 gap-6 border-t border-petrol-line/40 pt-6">
           <Stat k="Urgențe" v={site.urgente} />
           <Stat k="Program" v="L–S, 8–20" />
-          <Stat k="Rază" v={`${site.razaKm} km`} />
+          <Stat k="Rază" v={`${site.razaKm}`} />
         </dl>
       </div>
     </section>
@@ -157,7 +157,7 @@ function DeCe() {
     { t: "Preț spus din start", d: "Afli cât costă înainte să încep, nu după. Fără surprize la final." },
     { t: "Vin cu ce trebuie", d: "Scule și materiale pregătite, ca lucrarea să se termine dintr-o vizită." },
     { t: "Lucrare curată", d: "Las în urmă o instalație ordonată și locul strâns, nu un șantier." },
-    { t: "Om din zonă", d: `Sunt aproape — ajung repede în ${site.oras} și satele din jur.` },
+    { t: "Om din zonă", d: `Sunt aproape — ajung repede în ${site.oras} și satele din jur, plus deplasări în afara țării.` },
   ];
   return (
     <section className="relative">
