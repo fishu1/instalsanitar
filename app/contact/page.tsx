@@ -22,7 +22,7 @@ export default function Page() {
         <li><strong>WhatsApp:</strong> <a href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener noreferrer">{site.telefon}</a></li>
         <li><strong>Email:</strong> <a href={`mailto:${firma.emailContact}`}>{firma.emailContact}</a></li>
         <li><strong>Program:</strong> {site.program} · Urgențe: {site.urgente}</li>
-        <li><strong>Zonă:</strong> {site.oras} și pe o rază de {site.razaKm} km</li>
+        <li><strong>Zonă:</strong> {site.razaKm}</li>
       </ul>
 
       <h2>Date firmă</h2>
