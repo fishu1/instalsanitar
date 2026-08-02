@@ -203,7 +203,12 @@ function Zone() {
         </h2>
         <ul className="mt-6 flex flex-wrap gap-2">
           {site.zone.map((z) => (
-        
+            <li
+              key={z}
+              className="rounded-full border border-petrol-line/60 bg-petrol-950 px-4 py-1.5 text-sm text-zinc-300"
+            >
+              {z}
+            </li>
           ))}
           <li className="rounded-full border border-cupru-500/40 bg-cupru-500/10 px-4 py-1.5 text-sm text-cupru-400">
             + deplasări în Europa
@@ -213,6 +218,7 @@ function Zone() {
     </section>
   );
 }
+
 
 /* ── Contact ────────────────────────────────────────────── */
 function Contact({ telHref, waHref }: { telHref: string; waHref: string }) {
