@@ -197,21 +197,16 @@ function Zone() {
   return (
     <section className="relative bg-petrol-900">
       <div className="mx-auto max-w-6xl px-5 py-16">
-        <p className="text-xs uppercase tracking-widest text-cupru-400">Unde ajung</p>
+        <p className="text-xs uppercase tracking-widest text-cupru-400">Unde activez</p>
         <h2 className="mt-2 font-display text-2xl font-600 text-cream sm:text-3xl">
-          {site.oras} și împrejurimi
+          Pornesc din {site.oras}
         </h2>
         <ul className="mt-6 flex flex-wrap gap-2">
           {site.zone.map((z) => (
-            <li
-              key={z}
-              className="rounded-full border border-petrol-line/60 bg-petrol-950 px-4 py-1.5 text-sm text-zinc-300"
-            >
-              {z}
-            </li>
+        
           ))}
           <li className="rounded-full border border-cupru-500/40 bg-cupru-500/10 px-4 py-1.5 text-sm text-cupru-400">
-            + satele din jur
+            + deplasări în Europa
           </li>
         </ul>
       </div>
