@@ -24,15 +24,15 @@ export default function Home() {
 function Header({ telHref }: { telHref: string }) {
   return (
     <header className="relative z-20 border-b border-petrol-line/40">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-2 py-2">
         <a href="#top" className="flex items-center">
           <Image
             src="/Logo1.png"
             alt="InstalSanitar.ro"
-            width={220}
-            height={30}
+            width={160}
+            height={40}
             priority
-            className="h-20 w-auto"
+            className="h-18 w-auto"
           />
         </a>
         <a
