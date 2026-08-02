@@ -17,16 +17,9 @@ export const site = {
   oras: "Rusănești",
   judet: "Olt",
   zone: [
-    "Rusănești",
-    "Caracal",
-    "Corabia",
-    "Osica de Sus",
-    "Stoenești",
-    "Vădastra",
-    "Obârșia",
-    "Scărișoara",
+    "Europa",
   ],
-  razaKm: 40,
+  razaKm: "Toată Europa",
 };
 
 // ─────────────────────────────────────────────────────────────
